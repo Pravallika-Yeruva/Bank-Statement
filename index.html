@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Transactions</title>
+    <script src="transactions.js"></script>
+    <link rel="stylesheet" href="transactionstyle.css">    
+</head>
+<body>
+	
+    <h3>
+    	Bank Transaction Statement
+    </h3>
+    
+     <p><span style = "font-weight: bold;">Account Number:</span> 123456789</p>
+     
+    <p id = "StartBal">
+    	<span style = "font-weight: bold;">Starting Balance:</span> 
+        <span id="sb"></span>
+    </p>
+      
+    <p id = "EndBal">  
+    	<span style = "font-weight: bold;">Ending Balance:</span> 
+        <span id="eb"></span>
+    </p>
+    <br/>
+    <input type='button' onclick='tableFromJson()' 
+    	value='Transaction Summary' />
+        
+   
+    
+    <p id='showData'></p>
+    
+    <p id='msg'></p>
+</body>
+</html>
